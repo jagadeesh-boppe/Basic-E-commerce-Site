@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Simple Store</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <header>
+        <h1>My Simple Store</h1>
+        <div class="cart-icon">
+            🛒 Cart (<span id="cart-count">0</span>)
+        </div>
+    </header>
+
+    <main>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcSL7NWC8mx6s3PDgkvrJGYHVeZOrjVAUTFy4LOyT-0Nelx19IQY3eVqWbOWbXa3Ah_mVpxNLzMpqyQ6sftRQxcAQAiFv6J5OTB7KCssqL-Cfc4Uc64" width="300" height="200" alt="Product 1">
+                <h2>Product 1</h2>
+                <p>$1000.00</p>
+                <button class="add-to-cart-btn" data-name="Product 1" data-price="10">Add to Cart</button>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcRWk4qiVc0YRaRQSesb2MfswUoJrts5OD0WmmP03oBZ8FpcAou3w_DnCp_aP8iC-c9zbOva7uZ6hRGBOFWnrrLG7JoBlm6U3CwjUy_8pgVMwIb9piA" width="300" height="200" alt="Product 2">
+                <h2>Product 2</h2>
+                <p>$15.00</p>
+                <button class="add-to-cart-btn" data-name="Product 2" data-price="15">Add to Cart</button>
+            </div>
+            
+            <div class="product">
+                <img src="https://encrypted-tbn3.gstatic.com/licensed-image?q=tbn:ANd9GcTdWOtlJGgFYyIYuCG5YjJLy81q0UUaXQgc-Hcitv8FwubQQlMwo76RrtP_4jZZ_8w1lz9F9WHITPm2R4fO64MFRVuyk1fGW5C1P7Sm0nDxFHbGXyM" width="300" height="200" alt="Product 3">
+                <h2>Product 3</h2>
+                <p>$25.00</p>
+                <button class="add-to-cart-btn" data-name="Product 3" data-price="25">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <aside class="cart-summary">
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            </ul>
+        <p>Total: $<span id="cart-total">0.00</span></p>
+        <button id="checkout-btn">Checkout</button>
+    </aside>
+    
+    <script src="ecommerce.js"></script>
+</body>
+</html>
